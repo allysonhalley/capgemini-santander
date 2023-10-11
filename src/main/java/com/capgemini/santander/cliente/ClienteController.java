@@ -15,7 +15,6 @@ public class ClienteController {
 
     ClienteRepository repository;
 
-
     @GetMapping("/cliente")
     public List<Cliente> getAllClientes(){
         return repository.findAll();
@@ -26,6 +25,4 @@ public class ClienteController {
         return repository.save(cliente);
     }
 
-    
-    
 }
